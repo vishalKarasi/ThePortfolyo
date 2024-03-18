@@ -29,7 +29,7 @@ const Hero3 = ({ data, socialData }) => {
               <img src={image} alt="Author Image" />
             </div>
             <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              {perser(title)}
+              {perser("John Doe")}
             </h1>
             <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
               {perser(text)}

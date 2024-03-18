@@ -1,8 +1,13 @@
 @import "../../sass/default/variable";
+
+.st-portfolio-item {
+  margin-bottom: 50px;
+}
+
 .st-portfolio {
   display: block;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   &:hover {
     cursor: pointer;
   }
@@ -48,6 +53,27 @@
 
   .st-portfolio-img img {
     width: 100%;
+  }
+}
+
+.st-portfolio-link {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    background-color: $base-color1;
+    color: $dark-color4;
+    padding: 0.5em 2em;
+    border-radius: 100vmax;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid $base-color1;
+      color: $base-color3;
+      background-color: transparent;
+      scale: 0.9;
+    }
   }
 }
 
@@ -97,5 +123,5 @@
 }
 
 .st-portfolio-btn {
-  margin-top: 20px;
+  margin: 1em auto 0 auto;
 }

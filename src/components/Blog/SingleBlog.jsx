@@ -7,15 +7,15 @@ const SingleBlog = ({ element }) => {
 
   return (
     <div className={`st-post-single st-style1`}>
-      <Link href="blog-details.html" className="st-post-thumb st-zoom">
+      <Link to="/blog/blog-details" className="st-post-thumb st-zoom">
         <img src={image.url} className="st-zoom-in" alt="blog1" />
       </Link>
       <div className="st-post-info">
         <div className="st-post-date">
           By:&nbsp;
-          <a href="blog-details.html" className="st-post-author">
+          <Link to="/blog/blog-details" className="st-post-author">
             {position}
-          </a>
+          </Link>
           <span className="st-post-date-divider">|</span>
           <span className="st-post-publish-date">12/7/2020</span>
         </div>

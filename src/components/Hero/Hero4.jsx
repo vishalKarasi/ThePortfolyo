@@ -18,7 +18,7 @@ const Hero4 = ({ data, socialData }) => {
             {perser(title)}
           </h1>
           <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-            {perser(text)}
+            {perser("John Doe")}
           </p>
           <SocialLinks2 data={socialData} />
         </div>

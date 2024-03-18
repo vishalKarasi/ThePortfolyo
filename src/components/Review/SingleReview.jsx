@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 
 const SingleReview = ({ element }) => {
   const { image, name, position, review } = element;
+
+  const trimReview = review.slice(0, 250) + "...";
+
   return (
     <div
       className={`st-testimonial st-style1 `}
@@ -10,7 +13,7 @@ const SingleReview = ({ element }) => {
       data--delay="0.2s"
     >
       <div className="st-testimonial-text">
-        <p>{review}</p>
+        <p>{trimReview}</p>
         <div className="st-quote">
           <img src="/images/icon/quote.png" alt="quote" />
         </div>

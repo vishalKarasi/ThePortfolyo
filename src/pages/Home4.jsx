@@ -13,19 +13,13 @@ import Hero4 from "../components/Hero/Hero4";
 const Home4 = () => {
   const { userData } = useData();
   const aboutData = userData?.user?.about;
+  const resumeData = userData?.user?.timeline;
   const serviceData = userData?.user?.services;
   const skillData = userData?.user?.skills;
   const portfolioData = userData?.user?.projects;
   const socialData = userData?.user?.social_handles;
 
-  const {
-    heroData,
-    blogData,
-    resumeData,
-    reviewData,
-    contactData,
-    socialData2,
-  } = data;
+  const { heroData, blogData, reviewData, contactData, socialData2 } = data;
   return (
     <>
       <Hero4 data={heroData.homeFourHero} socialData={socialData2} />

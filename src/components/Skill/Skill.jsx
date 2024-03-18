@@ -63,9 +63,8 @@ const Skill = ({ data }) => {
             </div>
             {data.length > 5 && (
               <button
+                className="st-viewmore"
                 data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="800"
                 onClick={() => setShowAll(!showAll)}
               >
                 {showAll ? "Show Less" : "Show More"}

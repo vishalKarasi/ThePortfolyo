@@ -44,7 +44,12 @@ const PortfolioSection = ({ data }) => {
         <div className="container">
           <div className="row">
             {visibleItems.map((element, index) => (
-              <SinglePortfolio data={element} key={index} getData={getData} />
+              <SinglePortfolio
+                data={element}
+                key={index}
+                getData={getData}
+                index={index}
+              />
             ))}
             <div className="col-lg-12 text-center">
               <div className="st-portfolio-btn">

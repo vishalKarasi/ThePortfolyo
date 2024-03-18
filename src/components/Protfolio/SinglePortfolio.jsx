@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
-const SinglePortfolio = ({ data, getData }) => {
-  const { image, title, description } = data;
-
+const SinglePortfolio = ({ data, getData, index }) => {
+  const { image, title, description, liveurl, githuburl } = data;
   return (
     <div
       className="col-lg-4 col-md-6"
       data-aos="fade-up"
       data-aos-duration="500"
-      data-aos-delay={200}
+      data-aos-delay={index * 200}
     >
       <div
         className="st-portfolio-single st-style1"
@@ -25,6 +25,10 @@ const SinglePortfolio = ({ data, getData }) => {
               <h5>{title}</h5>
               <p>{description}</p>
             </div>
+          </div>
+          <div className="st-portfolio-link">
+            <Link to={liveurl}>Live Url</Link>
+            <Link to={githuburl}>Github</Link>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ const Hero = ({ data, socialData }) => {
               {subTitle}
             </h3>
             <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              {parser(title)}
+              {parser("John Doe")}
             </h1>
             <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
               {designation}

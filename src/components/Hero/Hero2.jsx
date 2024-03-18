@@ -4,7 +4,7 @@ import perser from "html-react-parser";
 import SocialLinks2 from "../SocialLinks/SocialLinks2";
 
 const Hero2 = ({ data, socialData }) => {
-  const { title, text, bgImgLink } = data;
+  const { text, bgImgLink } = data;
   return (
     <section
       id="home"
@@ -14,7 +14,7 @@ const Hero2 = ({ data, socialData }) => {
       <div className="container">
         <div className="st-hero-text">
           <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-            {perser(title)}
+            {perser("John Doe")}
           </h1>
           <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
             {perser(text)}

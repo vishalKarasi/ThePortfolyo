@@ -13,12 +13,13 @@ import Hero from "../components/Hero/Hero";
 const Home = () => {
   const { userData } = useData();
   const aboutData = userData?.user?.about;
+  const resumeData = userData?.user?.timeline;
   const serviceData = userData?.user?.services;
   const skillData = userData?.user?.skills;
   const portfolioData = userData?.user?.projects;
   const socialData = userData?.user?.social_handles;
 
-  const { heroData, blogData, resumeData, reviewData, contactData } = data;
+  const { heroData, blogData, reviewData, contactData } = data;
 
   return (
     <>

@@ -23,6 +23,7 @@ const Iconbox = ({ data }) => {
                 </div>
                 <h2 className="st-iconbox-title">{element.name}</h2>
                 <div className="st-iconbox-text">{element.desc}</div>
+                <div className="st-iconbox-charge">{element.charge}</div>
               </div>
               <div className="st-height-b30 st-height-lg-b30"></div>
             </div>
