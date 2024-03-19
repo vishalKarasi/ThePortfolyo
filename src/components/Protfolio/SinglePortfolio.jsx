@@ -13,7 +13,9 @@ const SinglePortfolio = ({ data, getData, index }) => {
     >
       <div
         className="st-portfolio-single st-style1"
-        onClick={() => getData(image.url, title, description)}
+        onClick={() =>
+          getData(image.url, title, description, liveurl, githuburl)
+        }
       >
         <div className="st-portfolio-item">
           <div className="st-portfolio st-zoom">

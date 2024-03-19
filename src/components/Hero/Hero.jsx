@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { useData } from "../../context/dataContext";
 
 const Hero = ({ data, socialData }) => {
-  const { subTitle, designation, title, bgImgLink } = data;
+  const { subTitle, designation, bgImgLink } = data;
   const { userData } = useData();
   const image = userData.user?.about?.avatar?.url;
 

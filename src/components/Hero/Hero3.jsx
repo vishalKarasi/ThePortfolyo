@@ -7,7 +7,7 @@ import WaterWave from "react-water-wave";
 import { useData } from "../../context/dataContext";
 
 const Hero3 = ({ data, socialData }) => {
-  const { title, text, bgImgLink } = data;
+  const { text, bgImgLink } = data;
   const { userData } = useData();
   const image = userData.user?.about?.avatar?.url;
 

@@ -54,8 +54,11 @@ const Skill = ({ data }) => {
                       {element.percentage}%
                     </div>
                   </div>
-                  <div className="st-progressbar" data-progress="95">
-                    <div className="st-progressbar-in "></div>
+                  <div
+                    className="st-progressbar"
+                    style={{ width: `${element.percentage}%` }}
+                  >
+                    <div className="st-progressbar-in"></div>
                   </div>
                   <div className="st-height-b30 st-height-lg-b20"></div>
                 </div>
@@ -64,7 +67,6 @@ const Skill = ({ data }) => {
             {data.length > 5 && (
               <button
                 className="st-viewmore"
-                data-aos="fade-up"
                 onClick={() => setShowAll(!showAll)}
               >
                 {showAll ? "Show Less" : "Show More"}

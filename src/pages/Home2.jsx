@@ -19,11 +19,11 @@ const Home2 = () => {
   const portfolioData = userData?.user?.projects;
   const socialData = userData?.user?.social_handles;
 
-  const { heroData, blogData, reviewData, contactData, socialData2 } = data;
+  const { heroData, blogData, reviewData, contactData } = data;
 
   return (
     <>
-      <Hero2 data={heroData.homeTwoHero} socialData={socialData2} />
+      <Hero2 data={heroData.homeTwoHero} socialData={socialData} />
       <About data={aboutData} data-aos="fade-right" />
       <Iconbox data={serviceData} data-aos="fade-right" />
       <Skill data={skillData} data-aos="fade-right" />

@@ -58,20 +58,31 @@
 
 .st-portfolio-link {
   display: flex;
-  justify-content: space-between;
+  gap: 2em;
 
   a {
-    background-color: $base-color1;
-    color: $dark-color4;
-    padding: 0.5em 2em;
+    width: 50%;
+    padding: 8px 30px;
+    text-align: center;
     border-radius: 100vmax;
+    color: $base-color1;
+    background-color: $dark-color3;
+    box-shadow: 0 0 4px 1px $base-color1;
     transition: all 0.4s ease-in-out;
-    border: 2px solid transparent;
+
+    &:nth-child(2) {
+      color: $base-color3;
+      box-shadow: 0 0 4px 1px $base-color3;
+
+      &:hover {
+        background-color: $base-color3;
+        box-shadow: 0 0 8px $base-color1;
+      }
+    }
 
     &:hover {
-      border: 2px solid $base-color1;
-      color: $base-color3;
-      background-color: transparent;
+      background-color: $base-color1;
+      color: $dark-color4;
       scale: 0.9;
     }
   }
